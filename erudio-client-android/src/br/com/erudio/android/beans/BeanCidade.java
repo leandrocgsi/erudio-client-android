@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-//@XStreamAlias("beanCidade")
+@XStreamAlias("beanCidade")
 public class BeanCidade extends BaseBean{
 
     private static final long serialVersionUID = 1L;

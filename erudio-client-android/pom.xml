@@ -20,38 +20,38 @@
             <artifactId>jersey-core</artifactId>
             <version>${jersey.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-json</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.jersey.contribs</groupId>
-            <artifactId>jersey-spring</artifactId>
-            <version>${jersey.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-core</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring-beans</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring-context</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring-web</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring-aop</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>com.sun.jersey</groupId> -->
+<!--             <artifactId>jersey-json</artifactId> -->
+<!--             <version>${jersey.version}</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>com.sun.jersey.contribs</groupId> -->
+<!--             <artifactId>jersey-spring</artifactId> -->
+<!--             <version>${jersey.version}</version> -->
+<!--             <exclusions> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-core</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-beans</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-context</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-web</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-aop</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--             </exclusions> -->
+<!--         </dependency> -->
             
         <dependency>
             <groupId>com.sun.jersey</groupId>
@@ -59,27 +59,27 @@
             <version>${jersey.version}</version>
             <type>jar</type>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-            <version>${spring.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-core</artifactId>
-                    <groupId>org.springframework</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>aopalliance</artifactId>
-                    <groupId>aopalliance</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.springframework.security</groupId> -->
+<!--             <artifactId>spring-security-core</artifactId> -->
+<!--             <version>${spring.version}</version> -->
+<!--             <exclusions> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>spring-core</artifactId> -->
+<!--                     <groupId>org.springframework</groupId> -->
+<!--                 </exclusion> -->
+<!--                 <exclusion> -->
+<!--                     <artifactId>aopalliance</artifactId> -->
+<!--                     <groupId>aopalliance</groupId> -->
+<!--                 </exclusion> -->
+<!--             </exclusions> -->
+<!--         </dependency> -->
                    
-        <dependency>
-            <groupId>com.thoughtworks.xstream</groupId>
-            <artifactId>xstream</artifactId>
-            <version>1.4.3</version>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>com.thoughtworks.xstream</groupId> -->
+<!--             <artifactId>xstream</artifactId> -->
+<!--             <version>1.4.3</version> -->
+<!--         </dependency> -->
         
         <dependency>
             <groupId>net.sf.dozer</groupId>
