@@ -16,87 +16,191 @@
 	
 	<dependencies>
 	    <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-core</artifactId>
-            <version>${jersey.version}</version>
-        </dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>2.2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>${jersey.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>activation</artifactId>
+					<groupId>javax.activation</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jaxb-api</artifactId>
+					<groupId>javax.xml.bind</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jaxb-impl</artifactId>
+					<groupId>com.sun.xml.bind</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>stax-api</artifactId>
+					<groupId>stax</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-spring</artifactId>
+			<version>${jersey.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-core</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-beans</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-context</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-web</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-aop</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>asm</artifactId>
+					<groupId>asm</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jersey-server</artifactId>
+					<groupId>com.sun.jersey</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>${jersey.version}</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${spring.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>spring-core</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-aop</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-asm</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-beans</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-context</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-expression</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>spring-tx</artifactId>
+					<groupId>org.springframework</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>aspectjweaver</artifactId>
+					<groupId>org.aspectj</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>aspectjrt</artifactId>
+					<groupId>org.aspectj</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>1.4.3</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>xmlpull</artifactId>
+					<groupId>xmlpull</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>xpp3_min</artifactId>
+					<groupId>xpp3</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<!-- ========================= -->
+		<!-- A culpa é desse cara aqui -->
+		<!-- ========================= -->
+		
 <!--         <dependency> -->
-<!--             <groupId>com.sun.jersey</groupId> -->
-<!--             <artifactId>jersey-json</artifactId> -->
-<!--             <version>${jersey.version}</version> -->
-<!--         </dependency> -->
-<!--         <dependency> -->
-<!--             <groupId>com.sun.jersey.contribs</groupId> -->
-<!--             <artifactId>jersey-spring</artifactId> -->
-<!--             <version>${jersey.version}</version> -->
+<!--             <artifactId>jaxb-api</artifactId> -->
+<!--             <groupId>javax.xml.bind</groupId> -->
+<!--             <type>jar</type> -->
+<!--             <version>2.2.2</version> -->
 <!--             <exclusions> -->
 <!--                 <exclusion> -->
-<!--                     <artifactId>spring-core</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>activation</artifactId> -->
+<!--                     <groupId>javax.activation</groupId> -->
 <!--                 </exclusion> -->
 <!--                 <exclusion> -->
-<!--                     <artifactId>spring-beans</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
-<!--                 </exclusion> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>spring-context</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
-<!--                 </exclusion> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>spring-web</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
-<!--                 </exclusion> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>spring-aop</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
+<!--                     <artifactId>stax-api</artifactId> -->
+<!--                     <groupId>javax.xml.stream</groupId> -->
 <!--                 </exclusion> -->
 <!--             </exclusions> -->
 <!--         </dependency> -->
-            
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-client</artifactId>
-            <version>${jersey.version}</version>
-            <type>jar</type>
-        </dependency>
-<!--         <dependency> -->
-<!--             <groupId>org.springframework.security</groupId> -->
-<!--             <artifactId>spring-security-core</artifactId> -->
-<!--             <version>${spring.version}</version> -->
-<!--             <exclusions> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>spring-core</artifactId> -->
-<!--                     <groupId>org.springframework</groupId> -->
-<!--                 </exclusion> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>aopalliance</artifactId> -->
-<!--                     <groupId>aopalliance</groupId> -->
-<!--                 </exclusion> -->
-<!--             </exclusions> -->
-<!--         </dependency> -->
-                   
-<!--         <dependency> -->
-<!--             <groupId>com.thoughtworks.xstream</groupId> -->
-<!--             <artifactId>xstream</artifactId> -->
-<!--             <version>1.4.3</version> -->
-<!--         </dependency> -->
-        
-        <dependency>
-            <groupId>net.sf.dozer</groupId>
-            <artifactId>dozer</artifactId>
-            <version>5.3.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-jdk14</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        
+
+		<!-- ========================= -->
+		<!-- A culpa é desse cara aqui -->
+		<!-- ========================= -->
+		
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.2.5-b10</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>5.3.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-jdk14</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -124,7 +228,6 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-						<!-- platform or api level (api level 4 = platform 1.6) -->
 						<platform>8</platform>
 					</sdk>
 				</configuration>

@@ -1,11 +1,13 @@
 package br.com.erudio.android.beans;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
+//import javax.xml.bind.annotation.XmlAccessType;
+//import javax.xml.bind.annotation.XmlAccessorType;
+//import javax.xml.bind.annotation.XmlRootElement;
+//
+//@XmlRootElement
+//@XmlAccessorType(XmlAccessType.FIELD)
 @XStreamAlias("beanCidade")
 public class BeanCidade extends BaseBean{
 
