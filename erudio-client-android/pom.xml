@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.erudio</groupId>
 	<artifactId>erudio-client-android</artifactId>
-	<packaging>pom</packaging>
+	<packaging>apk</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Parent pom</name>
+	<name>erudio-client-android</name>
 	<url>http://maven.apache.org</url>
 	
     <properties>
@@ -14,7 +14,7 @@
         <spring.version>3.0.5.RELEASE</spring.version>
     </properties>
 	
-	<!-- <dependencies>
+	<dependencies>
 	    <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-core</artifactId>
@@ -81,7 +81,6 @@
             <version>1.4.3</version>
         </dependency>
         
-        DOZER
         <dependency>
             <groupId>net.sf.dozer</groupId>
             <artifactId>dozer</artifactId>
@@ -104,43 +103,32 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-	</dependencies> -->
-	
+	</dependencies>
+
 	<build>
+		<finalName>${project.artifactId}</finalName>
+		<sourceDirectory>src</sourceDirectory>
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
-					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
-					</configuration>
+					<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+					<artifactId>android-maven-plugin</artifactId>
+					<version>3.1.1</version>
+					<extensions>true</extensions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
 		<plugins>
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 				<artifactId>android-maven-plugin</artifactId>
-				<version>3.0.0-alpha-14</version>
 				<configuration>
-					<androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
-					<assetsDirectory>${project.basedir}/assets</assetsDirectory>
-					<resourceDirectory>${project.basedir}/res</resourceDirectory>
-					<nativeLibrariesDirectory>${project.basedir}/src/main/native</nativeLibrariesDirectory>
 					<sdk>
+						<!-- platform or api level (api level 4 = platform 1.6) -->
 						<platform>8</platform>
 					</sdk>
-					<deleteConflictingFiles>true</deleteConflictingFiles>
-					<undeployBeforeDeploy>true</undeployBeforeDeploy>
 				</configuration>
-				<extensions>true</extensions>
 			</plugin>
-			<!-- from parent <plugin> <artifactId>maven-compiler-plugin</artifactId> 
-				<version>2.3.2</version> <configuration> <source>1.6</source> <target>1.6</target> 
-				</configuration> </plugin> -->
 		</plugins>
 	</build>
 
