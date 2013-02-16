@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.erudio</groupId>
 	<artifactId>erudio-client-android</artifactId>
@@ -7,21 +7,28 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>erudio-client-android</name>
 	<url>http://maven.apache.org</url>
-	
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jersey.version>1.9</jersey.version>
-        <spring.version>3.0.5.RELEASE</spring.version>
-    </properties>
-	
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jersey.version>1.9</jersey.version>
+		<spring.version>3.0.5.RELEASE</spring.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>cutr-releases</id>
+			<url>https://github.com/CUTR-at-USF/cutr-mvn-repo/raw/master/releases</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
-	    <dependency>
+		<dependency>
 			<groupId>com.google.android</groupId>
 			<artifactId>android</artifactId>
 			<version>2.2.1</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-core</artifactId>
@@ -153,38 +160,64 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
-		<!-- ========================= -->
-		<!-- A culpa é desse cara aqui -->
-		<!-- ========================= -->
-		
-<!--         <dependency> -->
-<!--             <artifactId>jaxb-api</artifactId> -->
-<!--             <groupId>javax.xml.bind</groupId> -->
-<!--             <type>jar</type> -->
-<!--             <version>2.2.2</version> -->
-<!--             <exclusions> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>activation</artifactId> -->
-<!--                     <groupId>javax.activation</groupId> -->
-<!--                 </exclusion> -->
-<!--                 <exclusion> -->
-<!--                     <artifactId>stax-api</artifactId> -->
-<!--                     <groupId>javax.xml.stream</groupId> -->
-<!--                 </exclusion> -->
-<!--             </exclusions> -->
-<!--         </dependency> -->
 
 		<!-- ========================= -->
 		<!-- A culpa é desse cara aqui -->
 		<!-- ========================= -->
-		
+
+		<!-- <dependency> -->
+		<!-- <artifactId>jaxb-api</artifactId> -->
+		<!-- <groupId>javax.xml.bind</groupId> -->
+		<!-- <type>jar</type> -->
+		<!-- <version>2.2.2</version> -->
+		<!-- <exclusions> -->
+		<!-- <exclusion> -->
+		<!-- <artifactId>activation</artifactId> -->
+		<!-- <groupId>javax.activation</groupId> -->
+		<!-- </exclusion> -->
+		<!-- <exclusion> -->
+		<!-- <artifactId>stax-api</artifactId> -->
+		<!-- <groupId>javax.xml.stream</groupId> -->
+		<!-- </exclusion> -->
+		<!-- </exclusions> -->
+		<!-- </dependency> -->
+
+		<!-- ========================= -->
+		<!-- A culpa é desse cara aqui -->
+		<!-- ========================= -->
+
+
+
+		<dependency>
+			<groupId>edu.usf.cutr.android.xml</groupId>
+			<artifactId>jaxb-api-android</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.usf.cutr.android.xml</groupId>
+			<artifactId>stax-api-android</artifactId>
+			<version>1.0-2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>edu.usf.cutr.android.xml</groupId>
+			<artifactId>jackson-dataformat-xml-android</artifactId>
+			<version>2.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.usf.cutr.android.xml</groupId>
+			<artifactId>stax2-api-android</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+
+
+
 		<dependency>
 			<groupId>com.sun.xml.bind</groupId>
 			<artifactId>jaxb-impl</artifactId>
 			<version>2.2.5-b10</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>net.sf.dozer</groupId>
 			<artifactId>dozer</artifactId>
