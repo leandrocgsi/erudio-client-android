@@ -1,13 +1,15 @@
 package br.com.erudio.android.authentication;
 
+import javax.ws.rs.core.HttpHeaders;
+
+import org.springframework.security.core.codec.Base64;
+
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientHandlerException;
 import com.sun.jersey.api.client.ClientRequest;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.client.filter.ClientFilter;
-import javax.ws.rs.core.HttpHeaders;
-import org.springframework.security.core.codec.Base64;
 
 public class Authentication {
 

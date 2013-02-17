@@ -30,14 +30,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-core</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jersey-core-android</artifactId>
 			<version>${jersey.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-json</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jersey-json-android</artifactId>
 			<version>${jersey.version}</version>
 			<exclusions>
 				<exclusion>
@@ -60,8 +60,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.jersey.contribs</groupId>
-			<artifactId>jersey-spring</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jersey-spring-android</artifactId>
 			<version>${jersey.version}</version>
 			<exclusions>
 				<exclusion>
@@ -96,14 +96,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.jersey</groupId>
-			<artifactId>jersey-client</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jersey-client-android</artifactId>
 			<version>${jersey.version}</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>spring-security-core-android</artifactId>
 			<version>${spring.version}</version>
 			<exclusions>
 				<exclusion>
@@ -146,8 +146,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.thoughtworks.xstream</groupId>
-			<artifactId>xstream</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>xstream-android</artifactId>
 			<version>1.4.3</version>
 			<exclusions>
 				<exclusion>
@@ -189,33 +189,26 @@
 
 
 		<dependency>
-			<groupId>edu.usf.cutr.android.xml</groupId>
+			<groupId>br.com.semeru.android.xml</groupId>
 			<artifactId>jaxb-api-android</artifactId>
 			<version>2.2.2</version>
 		</dependency>
 		<dependency>
-			<groupId>edu.usf.cutr.android.xml</groupId>
+			<groupId>br.com.semeru.android.xml</groupId>
 			<artifactId>stax-api-android</artifactId>
 			<version>1.0-2</version>
 		</dependency>
 
 		<dependency>
-			<groupId>edu.usf.cutr.android.xml</groupId>
-			<artifactId>jackson-dataformat-xml-android</artifactId>
-			<version>2.1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>edu.usf.cutr.android.xml</groupId>
-			<artifactId>stax2-api-android</artifactId>
-			<version>3.1.1</version>
-		</dependency>
-
-
-
-		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jaxb-impl-android</artifactId>
 			<version>2.2.5-b10</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.com.semeru.android.xml</groupId>
+			<artifactId>jettison-android</artifactId>
+			<version>1.1</version>
 		</dependency>
 
 		<dependency>

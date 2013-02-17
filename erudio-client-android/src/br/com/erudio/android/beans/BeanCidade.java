@@ -1,8 +1,8 @@
 package br.com.erudio.android.beans;
 
-import br.com.semeru.javax2android.xml.bind.annotation.XmlAccessType;
-import br.com.semeru.javax2android.xml.bind.annotation.XmlAccessorType;
-import br.com.semeru.javax2android.xml.bind.annotation.XmlRootElement;
+import javax2android.xml.bind.annotation.XmlAccessType;
+import javax2android.xml.bind.annotation.XmlAccessorType;
+import javax2android.xml.bind.annotation.XmlRootElement;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 
