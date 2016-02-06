@@ -4,4 +4,4 @@ Este é um cliente REST, desenvolvido em ANDROID, que se comunica com a aplicaç
 
 # Erudio WS Exporter
 
-Esta é uma aplicação "proxy" que se comunica com o server Erudio via RMI e expõe serviços REST via HTTP.
+[Esta é uma aplicação](https://github.com/leandrocgsi/erudio-client-ws-exporter) "proxy" que se comunica com o server Erudio via [RMI]() e expõe serviços [REST]() via [HTTP]().
